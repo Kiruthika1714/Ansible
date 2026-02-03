@@ -1,8 +1,8 @@
 ---
-- name: Open Notepad on Windows
+- name: Open Notepad on Windows (non-blocking)
   hosts: all
   gather_facts: no
 
   tasks:
-    - name: Launch Notepad
-      win_shell: notepad.exe
+    - name: Launch Notepad in background
+      win_shell: start notepad.exe
