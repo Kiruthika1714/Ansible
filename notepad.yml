@@ -1,8 +1,10 @@
 ---
-- name: Open Notepad on Windows (non-blocking)
+- name: Visible result demo
   hosts: all
   gather_facts: no
 
   tasks:
-    - name: Launch Notepad in background
-      win_shell: start notepad.exe
+    - name: Create file on Desktop
+      win_copy:
+        content: "This was created by AWX"
+        dest: C:\Users\awx_visible.txt
