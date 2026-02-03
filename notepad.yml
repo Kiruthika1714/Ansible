@@ -1,0 +1,8 @@
+---
+- name: Open Notepad on Windows
+  hosts: all
+  gather_facts: no
+
+  tasks:
+    - name: Launch Notepad
+      win_shell: notepad.exe
