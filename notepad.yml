@@ -6,5 +6,5 @@
   tasks:
     - name: Create file on Desktop
       win_copy:
-        content: "This was created by AWX"
-        dest: C:\Users\awxtest\Desktop\awxtest_visible.txt
+        content: "This was created by ansible"
+        dest: C:\Users\kirth\Desktop\ansible\visible.txt
