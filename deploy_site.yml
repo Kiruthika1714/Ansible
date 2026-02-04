@@ -1,0 +1,25 @@
+---
+- name: Deploy simple site
+  hosts: all
+  gather_facts: no
+
+  tasks:
+    - name: Install IIS
+      win_feature:
+        name: Web-Server
+        state: present
+
+    - name: Create site folder
+      win_file:
+        path: C:\simple_site
+        state: directory
+
+    - name: Copy site files
+      win_copy:
+        src: ./simple_site/
+        dest: C:\simple_site\
+
+    - name: Start IIS
+      win_shell: |
+        Import-Module WebAdministration
+        Start-WebSite "Default Web Site"
