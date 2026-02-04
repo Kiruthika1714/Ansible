@@ -5,12 +5,12 @@
   <style>
     body {
       margin: 0;
-      font-family: Segoe UI, Arial;
+      font-family: Arial, sans-serif;
       background: #f2f4f7;
     }
 
     .hero {
-      background-image: url("images/hero.jpg");
+      background-image: url("https://images.unsplash.com/photo-1492724441997-5dc865305da7");
       background-size: cover;
       background-position: center;
       height: 320px;
@@ -19,20 +19,21 @@
       align-items: center;
       justify-content: center;
       color: white;
-      font-size: 42px;
+      font-size: 40px;
       font-weight: bold;
-      text-shadow: 2px 2px 10px black;
+      text-shadow: 2px 2px 8px black;
     }
 
     .subtitle {
       font-size: 20px;
+      font-weight: normal;
       margin-top: 10px;
     }
 
     .container {
       display: flex;
       justify-content: center;
-      gap: 25px;
+      gap: 20px;
       padding: 30px;
     }
 
@@ -40,7 +41,7 @@
       width: 260px;
       background: white;
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
       overflow: hidden;
       text-align: center;
     }
@@ -51,11 +52,15 @@
       object-fit: cover;
     }
 
+    .card h3 {
+      margin: 10px 0;
+    }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 15px;
-      padding: 25px;
+      gap: 10px;
+      padding: 20px;
     }
 
     .gallery img {
@@ -63,7 +68,6 @@
       height: 150px;
       object-fit: cover;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
   </style>
 </head>
@@ -77,33 +81,33 @@
 
   <div class="container">
     <div class="card">
-      <img src="images/server.jpg">
+      <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f">
       <h3>Server Automation</h3>
-      <p>Automated deployments</p>
+      <p>Automated deployment</p>
     </div>
 
     <div class="card">
-      <img src="images/devops.jpg">
+      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
       <h3>DevOps</h3>
-      <p>CI/CD pipelines</p>
+      <p>CI/CD and infra</p>
     </div>
 
     <div class="card">
-      <img src="images/cloud.jpg">
+      <img src="https://images.unsplash.com/photo-1516251193007-45ef944ab0c6">
       <h3>Cloud</h3>
-      <p>Scalable infrastructure</p>
+      <p>Scalable systems</p>
     </div>
   </div>
 
   <div class="gallery">
-    <img src="images/g1.jpg">
-    <img src="images/g2.jpg">
-    <img src="images/g3.jpg">
-    <img src="images/g4.jpg">
-    <img src="images/g1.jpg">
-    <img src="images/g2.jpg">
-    <img src="images/g3.jpg">
-    <img src="images/g4.jpg">
+    <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd">
+    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4">
+    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4">
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692">
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+    <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f">
+    <img src="https://images.unsplash.com/photo-1585079542156-2755d9c8a094">
   </div>
 
 </body>
