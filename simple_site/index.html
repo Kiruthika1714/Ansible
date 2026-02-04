@@ -5,12 +5,12 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Segoe UI, Arial;
       background: #f2f4f7;
     }
 
     .hero {
-      background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+      background-image: url("images/hero.jpg");
       background-size: cover;
       background-position: center;
       height: 320px;
@@ -19,21 +19,20 @@
       align-items: center;
       justify-content: center;
       color: white;
-      font-size: 40px;
+      font-size: 42px;
       font-weight: bold;
-      text-shadow: 2px 2px 8px black;
+      text-shadow: 2px 2px 10px black;
     }
 
     .subtitle {
       font-size: 20px;
-      font-weight: normal;
       margin-top: 10px;
     }
 
     .container {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 25px;
       padding: 30px;
     }
 
@@ -41,7 +40,7 @@
       width: 260px;
       background: white;
       border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
       overflow: hidden;
       text-align: center;
     }
@@ -52,15 +51,11 @@
       object-fit: cover;
     }
 
-    .card h3 {
-      margin: 10px 0;
-    }
-
     .gallery {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-      padding: 20px;
+      gap: 15px;
+      padding: 25px;
     }
 
     .gallery img {
@@ -68,49 +63,47 @@
       height: 150px;
       object-fit: cover;
       border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Hero -->
   <div class="hero">
     Ansible Deployment
     <div class="subtitle">By Kiruthika</div>
   </div>
 
-  <!-- Cards -->
   <div class="container">
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31">
+      <img src="images/server.jpg">
       <h3>Server Automation</h3>
-      <p>Automated deployment</p>
+      <p>Automated deployments</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+      <img src="images/devops.jpg">
       <h3>DevOps</h3>
-      <p>CI/CD and infra</p>
+      <p>CI/CD pipelines</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758">
+      <img src="images/cloud.jpg">
       <h3>Cloud</h3>
-      <p>Scalable systems</p>
+      <p>Scalable infrastructure</p>
     </div>
   </div>
 
-  <!-- Gallery -->
   <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1526378722447-4ad84b0d6f9c">
-    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
-    <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f">
-    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
-    <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769">
-    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692">
-    <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f">
-    <img src="https://images.unsplash.com/photo-1585079542156-2755d9c8a094">
+    <img src="images/g1.jpg">
+    <img src="images/g2.jpg">
+    <img src="images/g3.jpg">
+    <img src="images/g4.jpg">
+    <img src="images/g1.jpg">
+    <img src="images/g2.jpg">
+    <img src="images/g3.jpg">
+    <img src="images/g4.jpg">
   </div>
 
 </body>
