@@ -1,5 +1,5 @@
 ---
-- name: Deploy simple site on Windows client
+- name: Fully automated IIS site
   hosts: all
   gather_facts: no
 
@@ -8,16 +8,21 @@
       win_shell: |
         Enable-WindowsOptionalFeature -Online -FeatureName IIS-WebServerRole -All -NoRestart
 
-    - name: Create site folder
+    - name: Ensure IIS root exists
       win_file:
-        path: C:\simple_site
+        path: C:\inetpub\wwwroot
         state: directory
 
-    - name: Copy site files
-      win_copy:
-        src: ./simple_site/
-        dest: C:\simple_site\
+    - name: Delete default IIS page
+      win_file:
+        path: C:\inetpub\wwwroot\iisstart.htm
+        state: absent
 
-    - name: Start IIS
+    - name: Deploy my index.html
+      win_copy:
+        src: ./simple_site/index.html
+        dest: C:\inetpub\wwwroot\index.html
+
+    - name: Restart IIS
       win_shell: |
-        Start-Service W3SVC
+        Restart-Service W3SVC
