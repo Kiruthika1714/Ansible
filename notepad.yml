@@ -7,4 +7,4 @@
     - name: Create file on Desktop
       win_copy:
         content: "This was created by ansible"
-        dest: C:\Users\kirth\Desktop\ansible\visible.txt
+        dest: C:\Users\kirth\Desktop\ansible\test2.txt
